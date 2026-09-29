@@ -1,0 +1,5 @@
+<launch>
+  <!-- Pass the argument into the node as a parameter -->
+  <node pkg="manicapture" type="wrench_estimation.py" name="wrench_estimation_node" output="screen">
+  </node>
+</launch>

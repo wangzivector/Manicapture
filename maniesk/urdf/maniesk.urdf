@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="maniesk">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0016428 0.0022974 -0.014735"
+        rpy="0 0 0" />
+      <mass
+        value="0.013695" />
+      <inertia
+        ixx="2.9361E-06"
+        ixy="5.2729E-07"
+        ixz="2.6717E-09"
+        iyy="2.8841E-06"
+        iyz="7.0634E-08"
+        izz="3.9051E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.15 0.15 0.15 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_11">
+    <inertial>
+      <origin
+        xyz="-0.019438 0.020289 0.001734"
+        rpy="0 0 0" />
+      <mass
+        value="0.0022347" />
+      <inertia
+        ixx="2.2926E-07"
+        ixy="2.141E-07"
+        ixz="-4.9254E-11"
+        iyy="2.8451E-07"
+        iyz="-1.5001E-10"
+        izz="4.7751E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_11.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_11.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j11"
+    type="revolute">
+    <origin
+      xyz="0.0080804 -0.027606 -0.023"
+      rpy="0 -1.5707963267948966 -2.356194490192345" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_11" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_12">
+    <inertial>
+      <origin
+        xyz="0.0239347115479489 0.0153927042255716 0.00503368058218515"
+        rpy="0 0 0" />
+      <mass
+        value="0.00172486845359109" />
+      <inertia
+        ixx="2.96568934534257E-07"
+        ixy="-1.95167710457616E-07"
+        ixz="-5.36509543954246E-08"
+        iyy="3.59909020664556E-07"
+        iyz="-3.09062123925736E-08"
+        izz="6.06924505588211E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_12.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.3 0.3 0.3 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_12.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j12"
+    type="revolute">
+    <origin
+      xyz="-0.034337 0.0312 0.0017"
+      rpy="-1.5708 -1.5708 3.1416" />
+    <parent
+      link="link_11" />
+    <child
+      link="link_12" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_13">
+    <inertial>
+      <origin
+        xyz="-0.00275598091844049 0.0171013082982554 0.0114897991653802"
+        rpy="0 0 0" />
+      <mass
+        value="0.0021577823256147" />
+      <inertia
+        ixx="4.36819893192054E-07"
+        ixy="7.96040455945356E-08"
+        ixz="-1.70706905974494E-09"
+        iyy="2.87788243442553E-07"
+        iyz="1.13766383807387E-09"
+        izz="3.00034675003969E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_13.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.41 0.41 0.41 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_13.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j13"
+    type="revolute">
+    <origin
+      xyz="0.04 0.0332 0.0087"
+      rpy="1.5708 1.5708 0" />
+    <parent
+      link="link_12" />
+    <child
+      link="link_13" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_14">
+    <inertial>
+      <origin
+        xyz="-0.00528914239768588 0.0184953058372088 0.0131934817462545"
+        rpy="0 0 0" />
+      <mass
+        value="0.00455016560118615" />
+      <inertia
+        ixx="7.32861894173576E-07"
+        ixy="1.12234174723249E-07"
+        ixz="1.41536594070198E-10"
+        iyy="4.7993536137898E-07"
+        iyz="-6.94763431402799E-10"
+        izz="5.67831737014242E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_14.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.5 0.5 0.5 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_14.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j14"
+    type="revolute">
+    <origin
+      xyz="-0.0095575 0.0312 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_13" />
+    <child
+      link="link_14" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="p1">
+    <inertial>
+      <origin
+        xyz="-6.51825374557019E-06 -0.00200469416279114 -0.0096608576019578"
+        rpy="0 0 0" />
+      <mass
+        value="0.00455016560118615" />
+      <inertia
+        ixx="5.67831737014242E-07"
+        ixy="-6.94763431402808E-10"
+        ixz="-1.41536594070238E-10"
+        iyy="4.7993536137898E-07"
+        iyz="-1.12234174723248E-07"
+        izz="7.32861894173576E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/p1.dae" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.5 0.5 0.5 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/p1.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pj1"
+    type="fixed">
+    <origin
+      xyz="-0.01495 0.0205 0.0132"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="link_14" />
+    <child
+      link="p1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_21">
+    <inertial>
+      <origin
+        xyz="-0.00292555609180226 0.00333049704025466 0.00300313692306352"
+        rpy="0 0 0" />
+      <mass
+        value="0.00111180928334376" />
+      <inertia
+        ixx="3.30194238642245E-08"
+        ixy="-8.35318642205602E-10"
+        ixz="5.55623141654561E-10"
+        iyy="9.10482440625476E-08"
+        iyz="-4.083996436177E-09"
+        izz="1.0273967619007E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_21.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.3 0.3 0.3 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_21.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j21"
+    type="revolute">
+    <origin
+      xyz="0.005 0.026 -0.0238"
+      rpy="-3.1416 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_21" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_22">
+    <inertial>
+      <origin
+        xyz="-0.00167183483203977 0.0289801523532643 0.00988583419271644"
+        rpy="0 0 0" />
+      <mass
+        value="0.0023443539039227" />
+      <inertia
+        ixx="7.95922863072504E-07"
+        ixy="1.16161787663554E-07"
+        ixz="-1.14266665074892E-09"
+        iyy="2.18170957112326E-07"
+        iyz="6.2595115802451E-10"
+        izz="7.09675987536078E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_22.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.41 0.41 0.41 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_22.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j22"
+    type="revolute">
+    <origin
+      xyz="-0.0112 0.008 0.0042"
+      rpy="0 1.5708 0" />
+    <parent
+      link="link_21" />
+    <child
+      link="link_22" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_23">
+    <inertial>
+      <origin
+        xyz="-0.000406665427611556 0.0243163240387306 0.0109709678952181"
+        rpy="0 0 0" />
+      <mass
+        value="0.00310590231929713" />
+      <inertia
+        ixx="3.77124429758911E-07"
+        ixy="1.97240143667657E-08"
+        ixz="5.83095805058068E-09"
+        iyy="2.54660384426408E-07"
+        iyz="8.35997570848633E-09"
+        izz="2.56930722568691E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_23.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.5 0.5 0.5 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_23.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j23"
+    type="revolute">
+    <origin
+      xyz="-0.0080705 0.0492 0.0002"
+      rpy="0 0 0" />
+    <parent
+      link="link_22" />
+    <child
+      link="link_23" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="p2">
+    <inertial>
+      <origin
+        xyz="-1.28989638840393E-05 -0.00316698285870197 -0.00752908298820648"
+        rpy="0 0 0" />
+      <mass
+        value="0.00225545331820612" />
+      <inertia
+        ixx="2.15905577669202E-07"
+        ixy="-3.6386869109807E-10"
+        ixz="-4.67309852028347E-10"
+        iyy="2.09790646145204E-07"
+        iyz="-3.2274695274238E-08"
+        izz="3.14640264745325E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/p1.dae" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.5 0.5 0.5 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/p1.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pj2"
+    type="fixed">
+    <origin
+      xyz="-0.010158 0.033 0.011"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="link_23" />
+    <child
+      link="p2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_31">
+    <inertial>
+      <origin
+        xyz="-0.00292555609180224 0.0033304970402547 0.00300313692306353"
+        rpy="0 0 0" />
+      <mass
+        value="0.00111180928334376" />
+      <inertia
+        ixx="3.30194238642245E-08"
+        ixy="-8.35318642205626E-10"
+        ixz="5.55623141654597E-10"
+        iyy="9.10482440625474E-08"
+        iyz="-4.08399643617702E-09"
+        izz="1.02739676190069E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_31.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.3 0.3 0.3 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_31.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j31"
+    type="revolute">
+    <origin
+      xyz="-0.023 0.026 -0.0238"
+      rpy="3.1416 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_31" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_32">
+    <inertial>
+      <origin
+        xyz="-0.00141507332656362 0.0324623732696431 0.00990227629547054"
+        rpy="0 0 0" />
+      <mass
+        value="0.00243138055410106" />
+      <inertia
+        ixx="1.01380603156866E-06"
+        ixy="1.31826058001882E-07"
+        ixz="-1.69906134718062E-09"
+        iyy="2.17796422212826E-07"
+        iyz="2.55512699184065E-09"
+        izz="9.29922192862985E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_32.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.41 0.41 0.41 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_32.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j32"
+    type="revolute">
+    <origin
+      xyz="-0.0112 0.008 0.0042"
+      rpy="0 1.5708 0" />
+    <parent
+      link="link_31" />
+    <child
+      link="link_32" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_33">
+    <inertial>
+      <origin
+        xyz="-0.000406667403246387 0.027372931109677 0.0109709543907002"
+        rpy="0 0 0" />
+      <mass
+        value="0.00310589860633906" />
+      <inertia
+        ixx="3.7712440525904E-07"
+        ixy="1.97240181648555E-08"
+        ixz="5.83095272718181E-09"
+        iyy="2.54660293337739E-07"
+        iyz="8.36000704233207E-09"
+        izz="2.5693062738961E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_33.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.5 0.5 0.5 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/link_33.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j33"
+    type="revolute">
+    <origin
+      xyz="-0.0080581 0.0552 0.0002"
+      rpy="0 0 0" />
+    <parent
+      link="link_32" />
+    <child
+      link="link_33" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="p3">
+    <inertial>
+      <origin
+        xyz="-1.28989638839144E-05 -0.00316698285870201 -0.00752908298820647"
+        rpy="0 0 0" />
+      <mass
+        value="0.00225545331820612" />
+      <inertia
+        ixx="2.15905577669201E-07"
+        ixy="-3.63868691100186E-10"
+        ixz="-4.67309852025555E-10"
+        iyy="2.09790646145203E-07"
+        iyz="-3.22746952742381E-08"
+        izz="3.14640264745323E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/p1.dae" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.5 0.5 0.5 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://maniesk/meshes/p1.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pj3"
+    type="fixed">
+    <origin
+      xyz="-0.0101582039324994 0.037 0.011"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="link_33" />
+    <child
+      link="p3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

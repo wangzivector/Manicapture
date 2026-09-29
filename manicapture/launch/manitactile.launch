@@ -1,0 +1,43 @@
+<launch>
+<!-- parameter definition -->
+    <arg name="machine" default="true"/>
+    <arg name="vistactile" default="true"/>
+    <arg name="rviz" default="true"/>
+    <arg name="tactile_mode" default="static"/>
+    <arg name="tactile_pub_itpoints" default="false"/>
+    <arg name="rviz_file" default="vis_system"/>
+
+
+    <group if="$(arg machine)">
+    <include file="$(find manicapture)/launch/machine.launch" />
+    </group>
+
+<!-- tactile node -->
+    <node pkg="manicapture" type="manitactile.py" name="manitactile_node" output="screen">
+        <param name="photo_optimization" type="str" value="gaussian" />
+        <!-- <param name="photo_optimization" type="str" value="intensity" /> -->
+        <param name="force_model_path" type="str" value="$(find manicapture)/misc/gelt_model.pkl" />
+        <param name="scale_model_path" type="str" value="$(find manicapture)/misc/data_transform.dtf" />
+    </node>
+
+    <group if="$(arg vistactile)">
+        <node pkg="manicapture" type="tactilevis.py" name="tactile_visualization_node" output="screen">
+            <param name="tactile_display" type="str" value="$(arg tactile_mode)" />
+            <param name="tactile_itpoints" type="str" value="$(arg tactile_pub_itpoints)" />
+            <param name="vis_pub_hz" type="double" value="30" />
+        </node>
+
+        <group if="$(eval tactile_mode == 'static')">
+            <node pkg="tf" type="static_transform_publisher" name="static_transform_publisher_0" args="0.2 0 0 0 0 0 map p1 500" />
+            <node pkg="tf" type="static_transform_publisher" name="static_transform_publisher_1" args="0.5 0 0 0 0 0 map p2 500" />
+            <node pkg="tf" type="static_transform_publisher" name="static_transform_publisher_2" args="0.8 0 0 0 0 0 map p3 500" />
+            <node pkg="tf" type="static_transform_publisher" name="static_transform_publisher_3" args="1.1 0 0 0 0 0 map p4 500" />
+        </group>
+    </group>
+
+<!-- visualization -->
+    <group if="$(arg rviz)">
+        <node name="rviz" pkg="rviz" type="rviz" args="-d $(find manicapture)/launch/$(arg rviz_file).rviz" />
+    </group>
+
+</launch>

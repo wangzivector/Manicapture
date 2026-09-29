@@ -1,7 +1,7 @@
-# Manicapture
+# OptTac: manipulation capture interface for <ins>low-cost</ins>, <ins>triaxial</ins>, <ins>distributed</ins> <ins>deformation-force-torque</ins> sensation
 Official porject for OptTac: Optoelectronic taxels enabled triaxial deformation-force-torque generalization for contact-aware manipulation
 
-**For reserving Patent rights, this project will be publicly available once the Patent application is initialized, potentially before Nov. 2026.**
+**(For reserving Patent rights, this project will be publicly available once the Patent application is initialized, potentially before Nov. 2026)**
 
 
 ## License

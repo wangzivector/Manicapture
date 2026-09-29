@@ -1,0 +1,12 @@
+<launch>
+    <arg name="port" default="/dev/ttyACM0"/>
+    <arg name="baud" default="115200"/>
+    
+    <node pkg="rosserial_python" type="serial_node.py" name="machine_serial_node" output="screen">
+        <param name="port" value="$(arg port)"/>
+        <param name="baud" value="$(arg baud)"/>
+    </node>
+    <node pkg="manicapture" type="machine_server" name="machine_server" output="screen"/>
+    <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_reconfigure" output="screen"/>
+
+</launch>
