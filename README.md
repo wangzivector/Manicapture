@@ -2,19 +2,20 @@
 
 # OptTac: <ins>low-cost</ins> <ins>triaxial</ins> <ins>distributed</ins> deform-force-torque tactile sensing kit for generalizeable robotic manipulation
 
-[![Project](https://img.shields.io/badge/Page_and_Guide-GitHub-green)](https://wangzivector.github.io/OptTacPage/)
-[![Project](https://img.shields.io/badge/Hardware-CAD-purple)](./manicapture/hardware/)
-[![License](https://img.shields.io/badge/Software-ROS-red)](./manicapture/)
-[![Pretrain Model](https://img.shields.io/badge/Pretrain_model-Numpy-yellow)](./manicapture/misc)
-[![License](https://img.shields.io/badge/License-PolyForm-blue)](./LICENSE)
+[![](https://img.shields.io/badge/Guide-Page-green)](https://wangzivector.github.io/OptTacPage/)
+[![](https://img.shields.io/badge/Hardware-CAD-purple)](#device-manufacture)
+[![](https://img.shields.io/badge/Software-ROS-red)](./manicapture/)
+[![](https://img.shields.io/badge/Pretrain_model-Numpy-yellow)](./manicapture/misc)
+[![](https://img.shields.io/badge/License-PolyForm-blue)](./LICENSE)
 
 
-We introduce OptTac, optoelectronic sensing kit enabled triaxial deformation-force-torque generalization for contact-aware manipulation.
-The hardware manufacture and software package are open-sourced for tactile reproduction towards relevant manipulation research. [[Project page]](https://wangzivector.github.io/opttacpage)
+We introduce [OptTac](https://wangzivector.github.io/OptTacPage/), optoelectronic tactile sensing kit enabled triaxial deformation-force-torque generalization for contact-rich robotic hardware augmentation.
+The device manufacture and software package are open-sourced for tactile reproduction towards relevant embodied manipulation research. 
 
 <img src="assets/media/system@3x-80.jpg" width="95%" title="opttac_system">
 
-<ins>**Features of OptTac**</ins>
+<br>
+<!-- <ins>**OptTac System**</ins> -->
 
 | Key characteristics | Functional description | Further reference |
 |---------|-------------|-------------|
@@ -27,7 +28,7 @@ The hardware manufacture and software package are open-sourced for tactile repro
 
 </div>
 
-## Maintenance schedule
+## 0. Maintenance schedule
 <mark>This work is gradually available in scheduled steps, under continuous preparation:</mark>
 
 > **The full hardware scheme, including PCB schemetic, BOM, FPCB Assembly, and fabrication guides, <br>will be publicly available after careful preparation and patent organization within Nov. 2026.** 
@@ -37,32 +38,58 @@ The hardware manufacture and software package are open-sourced for tactile repro
 <br>⬜ Fabrication guidance for OptTac [Est. 2026-10]
 <br>✅ Exoskeleton hand sensing kit: CAD and ROS package [2026-09-29]
 <br>✅ ROS package for tactile computation and visualization [2026-09-29]
-<br>⬜ Software setup, usage, and examples [Est. 2026-10-07]
+<br>✅ Software setup, usage, and examples [2026-10-07]
 <br>✅ Pre-trained checkpoints for wrench models [2026-09-29]
-<br>⬜ LeapHand extension using OptTac [Est. 2026-10]
-<br>⬜ LeapHand retargeting using OptTac [Est. 2026-10]
+<br>⬜ LeapHand extension and retargeting with OptTac [Est. 2026-10]
 
-## Device manufacture
-### OptPad FPCB manufacture
-- EasyEDA project link for PCB schmetic design.
+## 1. Manufacture
+### Step 1: OptPad FPCB manufacture
+- EasyEDA project link for FPCB schmetic design
 - BOM files
-- Assembly service reference
+- FPCB assembly service
 
-### Elastomer casting
-- 3D-printed CAD files of casting molds: [Project pages](page1)
-- Manufacture video guidance: [Project pages](page2)
+### Step 2: Elastomer casting
+- CAD files of 3D-printed casting molds: [Project pages](page1)
+- Videos of manufacture guidance
 
-## Software environment
-### Step 1: conda env establishment
-```
+### Step 3: Modular assembly
+- Connecting board manufacture
+- Controller connection
+
+### Step 4 (Extended): Hand exoskeleton
+- Fabrication of mechanical links
+- Preparation of angular encoders
+- Joint-controller assembly
+
+### Step 5 (Extended): Visual 6D pose tracking
+- Assembly of Apriltags marker
+- Establishment of visual camera 
+
+## 2. Software
+### A: OptTac sensing pad
+<!-- ```
 # Create conda environment
 conda create -n manicapture python=3.10
 conda activate manicapture
+``` -->
+```
+# Activate USB Port connection
+# Launch tactile system module
+
 ```
 
+### B: Exoskeleton articulation
+```
+# Launch joint encoding module
 
+```
+### C: Visual pose tracking
+```
+# Install apriltag_ros Package
 
-## License
+```
+
+## -2. License
 
 **This project is licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE).**
 
@@ -70,7 +97,7 @@ Researchers and practitioners are welcome to implement this project by complying
 You may use, copy, and modify this code for noncommercial purposes, such as academic research, personal study, or experimentation.
 
 
-## Citation
+## -1. Citation
 If you want to cite this work, please find reference below:
 ```
 @article{wang2026opttac,
@@ -80,3 +107,6 @@ If you want to cite this work, please find reference below:
   year={2026}
 }
 ```
+
+## -0. Acknowledgement
+We welcome your valuable suggestions on enhancing this project.
