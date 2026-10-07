@@ -12,7 +12,7 @@
 We introduce [OptTac](https://wangzivector.github.io/OptTacPage/), optoelectronic tactile sensing kit enabled triaxial deformation-force-torque generalization for contact-rich robotic hardware augmentation.
 The device manufacture and software package are open-sourced for tactile reproduction towards relevant embodied manipulation research. 
 
-<img src="assets/media/system@3x-80.jpg" width="95%" title="opttac_system">
+<img src="assets/media/system@3x-80.jpg" href="https://wangzivector.github.io/OptTacPage/" style="display:block; margin-bottom:10px;" width="100%" title="opttac_system">
 
 <br>
 <!-- <ins>**OptTac System**</ins> -->
@@ -49,7 +49,7 @@ The device manufacture and software package are open-sourced for tactile reprodu
 - FPCB assembly service
 
 ### Step 2: Elastomer casting
-- CAD files of 3D-printed casting molds: [Project pages](page1)
+- CAD files of 3D-printed casting molds
 - Videos of manufacture guidance
 
 ### Step 3: Modular assembly
@@ -66,7 +66,7 @@ The device manufacture and software package are open-sourced for tactile reprodu
 - Establishment of visual camera 
 
 ## 2. Software
-### A: OptTac sensing pad
+### A: OptTac sensing pad [3D deformation + 4D wrench]
 <!-- ```
 # Create conda environment
 conda create -n manicapture python=3.10
@@ -78,12 +78,12 @@ conda activate manicapture
 
 ```
 
-### B: Exoskeleton articulation
+### B: Exoskeleton articulation [10-DoF hand joints]
 ```
 # Launch joint encoding module
 
 ```
-### C: Visual pose tracking
+### C: Visual pose tracking [6D hand pose]
 ```
 # Install apriltag_ros Package
 
