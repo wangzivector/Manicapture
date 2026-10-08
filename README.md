@@ -2,8 +2,8 @@
 
 # OptTac: <ins>low-cost</ins> <ins>triaxial</ins> <ins>distributed</ins> deform-force-torque tactile sensing kit for generalizeable robotic manipulation
 
-[![](https://img.shields.io/badge/Guide-Page-green)](https://wangzivector.github.io/opttacproject/)
-[![](https://img.shields.io/badge/Hardware-CAD-purple)](#device-manufacture)
+[![](https://img.shields.io/badge/Project-Page-green)](https://wangzivector.github.io/opttacproject/)
+[![](https://img.shields.io/badge/Hardware-CAD-purple)](https://github.com/wangzivector/OptTac_Manufacture)
 [![](https://img.shields.io/badge/Software-ROS-red)](./manicapture/)
 [![](https://img.shields.io/badge/Pretrain_model-Numpy-yellow)](./manicapture/misc)
 [![](https://img.shields.io/badge/License-PolyForm-blue)](./LICENSE)
@@ -30,7 +30,8 @@ The device manufacture and software package are open-sourced for tactile reprodu
 </div>
 
 ## 0. Maintenance schedule
-<mark>This work is gradually available in scheduled steps, under continuous preparation:</mark>
+<ins>This work is gradually available in scheduled steps, under continuous preparation:
+</ins>
 
 ✅ Establishment of project page [2026-10-06]
 <br>⬜ Release hardware solution of OptTac [Est. 2026-11]
@@ -43,6 +44,12 @@ The device manufacture and software package are open-sourced for tactile reprodu
 
 ## 1. Manufacture
 > **The full hardware scheme, including PCB schemetic, BOM, FPCB Assembly, and fabrication guides, <br>will be publicly available after careful preparation and patent organization within Nov. 2026.** 
+
+<ins><mark> 
+The brief workflow and links are provided below. 
+<br>Complete resource and guidance are gradually prepared in the hardware repository:
+<br>https://github.com/wangzivector/OptTac_Manufacture <mark></ins>
+
 ### Step 1: OptPad FPCB manufacture
 - EasyEDA project link for FPCB schmetic design
 - BOM files
