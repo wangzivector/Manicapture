@@ -34,8 +34,6 @@
         <include file="$(find manicapture)/launch/manipose.launch">
             <arg name="rviz" value="false" />
         </include>
-        <node pkg="tf" type="static_transform_publisher" name="tf_publisher_hand" args="0 0 0 0 0 0 tag_left_hand_flt /maniesk/base_link 30" />
-        <!-- <node pkg="tf" type="static_transform_publisher" name="tf_publisher_camera" args="0 0 0.5 0 3.14159265 0 map camera 30" /> -->
     </group>
 
 <!-- visualization -->

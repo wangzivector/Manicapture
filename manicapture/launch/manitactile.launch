@@ -16,8 +16,6 @@
     <node pkg="manicapture" type="manitactile.py" name="manitactile_node" output="screen">
         <param name="photo_optimization" type="str" value="gaussian" />
         <!-- <param name="photo_optimization" type="str" value="intensity" /> -->
-        <param name="force_model_path" type="str" value="$(find manicapture)/misc/gelt_model.pkl" />
-        <param name="scale_model_path" type="str" value="$(find manicapture)/misc/data_transform.dtf" />
     </node>
 
     <group if="$(arg vistactile)">

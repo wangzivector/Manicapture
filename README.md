@@ -9,13 +9,14 @@
 [![](https://img.shields.io/badge/License-PolyForm-blue)](./LICENSE)
 
 
-We introduce [OptTac](https://wangzivector.github.io/OptTacPage/), optoelectronic tactile sensing kit enabled triaxial deformation-force-torque generalization for contact-rich robotic hardware augmentation.
-The device manufacture and software package are open-sourced for tactile reproduction towards relevant embodied manipulation research. 
+We introduce **OptTac**, optoelectronic tactile sensing kit enabled triaxial deformation-force-torque generalization for contact-rich robotic hardware augmentation.
+The device manufacture and software package are open-sourced for tactile reproduction towards relevant embodied manipulation research [**[Porject page]**](https://wangzivector.github.io/OptTacPage/). 
 
-<img src="assets/media/system@3x-80.jpg" href="https://wangzivector.github.io/OptTacPage/" style="display:block; margin-bottom:10px;" width="100%" title="opttac_system">
+<img src="assets/media/system@3x-80.jpg" href="https://wangzivector.github.io/OptTacPage/" width="100%" title="opttac_system">
 
-<br>
-<!-- <ins>**OptTac System**</ins> -->
+<!-- <br> -->
+<!-- <ins>**OptTac**</ins> -->
+### OptTac: optoelectronic tactile sensing kit &nbsp; &nbsp; &nbsp;
 
 | Key characteristics | Functional description | Further reference |
 |---------|-------------|-------------|
@@ -31,8 +32,6 @@ The device manufacture and software package are open-sourced for tactile reprodu
 ## 0. Maintenance schedule
 <mark>This work is gradually available in scheduled steps, under continuous preparation:</mark>
 
-> **The full hardware scheme, including PCB schemetic, BOM, FPCB Assembly, and fabrication guides, <br>will be publicly available after careful preparation and patent organization within Nov. 2026.** 
-
 ✅ Establishment of project page [2026-10-06]
 <br>⬜ Release hardware solution of OptTac [Est. 2026-11]
 <br>⬜ Fabrication guidance for OptTac [Est. 2026-10]
@@ -43,6 +42,7 @@ The device manufacture and software package are open-sourced for tactile reprodu
 <br>⬜ LeapHand extension and retargeting with OptTac [Est. 2026-10]
 
 ## 1. Manufacture
+> **The full hardware scheme, including PCB schemetic, BOM, FPCB Assembly, and fabrication guides, <br>will be publicly available after careful preparation and patent organization within Nov. 2026.** 
 ### Step 1: OptPad FPCB manufacture
 - EasyEDA project link for FPCB schmetic design
 - BOM files
@@ -66,27 +66,72 @@ The device manufacture and software package are open-sourced for tactile reprodu
 - Establishment of visual camera 
 
 ## 2. Software
-### A: OptTac sensing pad [3D deformation + 4D wrench]
-<!-- ```
-# Create conda environment
-conda create -n manicapture python=3.10
-conda activate manicapture
-``` -->
-```
-# Activate USB Port connection
-# Launch tactile system module
+### Package installation
+- OptTac packages: [OptPad, 10D joint, 6D pose] and [Maniesk URDF]
+```bash
+# Download full OptTac packages
+cd catkin_ws/src
+git clone https://github.com/wangzivector/Manicapture.git
 
+# Build packages
+cd catkin_ws
+catkin_make
+```
+ - Minimum Python dependency
+```bash
+# Manicapture built on minimum external Python packages
+pip3 install onnxruntime=1.16.3, numpy==1.24.4, yaml # for ROS Noetic
+
+# OR for NVIDIA GPU acceleration (do not install both)
+pip3 install onnxruntime-gpu
+```
+
+- [extended] 6D pose visual tracking
+```bash
+# Install USB_CAM ROS package and plug camera 
+sudo apt-get install ros-noetic-usb-cam # for ROS Noetic
+
+# Install apriltag_ros Package following page:
+https://github.com/AprilRobotics/apriltag_ros
+```
+
+### Device authorization
+- For TacPads and basic OptTac hardware
+```bash
+# Plug device with USB
+# Activate USB Port connection
+sudo chmod 777 /dev/ttyUSB0
+
+# [OR] for fast and multiple pads 
+bash ./manicapture/misc/portinit.sh
+```
+
+### A: OptTac sensing pad [3D deformation + 4D wrench]
+
+```bash
+# Launch tactile OptTac hardware
+roslaunch manicapture manitactile.launch
+
+# Launch tactile wrench estimation
+roslaunch manicapture maniwest.launch
 ```
 
 ### B: Exoskeleton articulation [10-DoF hand joints]
-```
+```bash
 # Launch joint encoding module
-
+roslaunch manicapture manijoint.launch
 ```
+
 ### C: Visual pose tracking [6D hand pose]
+```bash
+# Launch pose tracking module
+roslaunch manicapture manipose.launch
 ```
-# Install apriltag_ros Package
 
+### [A+B+C]: Universal manipulation interface
+```bash
+# Launch all previous packages and visualization
+roslaunch manicapture system.launch rviz:=true
 ```
 
 ## -2. License
