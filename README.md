@@ -2,7 +2,7 @@
 
 # OptTac: <ins>low-cost</ins> <ins>triaxial</ins> <ins>distributed</ins> deform-force-torque tactile sensing kit for generalizeable robotic manipulation
 
-[![](https://img.shields.io/badge/Guide-Page-green)](https://wangzivector.github.io/OptTacPage/)
+[![](https://img.shields.io/badge/Guide-Page-green)](https://wangzivector.github.io/opttacproject/)
 [![](https://img.shields.io/badge/Hardware-CAD-purple)](#device-manufacture)
 [![](https://img.shields.io/badge/Software-ROS-red)](./manicapture/)
 [![](https://img.shields.io/badge/Pretrain_model-Numpy-yellow)](./manicapture/misc)
@@ -10,9 +10,9 @@
 
 
 We introduce **OptTac**, optoelectronic tactile sensing kit enabled triaxial deformation-force-torque generalization for contact-rich robotic hardware augmentation.
-The device manufacture and software package are open-sourced for tactile reproduction towards relevant embodied manipulation research [**[Porject page]**](https://wangzivector.github.io/OptTacPage/). 
+The device manufacture and software package are open-sourced for tactile reproduction towards relevant embodied manipulation research [**[Porject page]**](https://wangzivector.github.io/opttacproject/). 
 
-<img src="assets/media/system@3x-80.jpg" href="https://wangzivector.github.io/OptTacPage/" width="100%" title="opttac_system">
+<img src="assets/media/system@3x-80.jpg" href="https://wangzivector.github.io/opttacproject/" width="100%" title="opttac_system">
 
 <!-- <br> -->
 <!-- <ins>**OptTac**</ins> -->
@@ -23,9 +23,9 @@ The device manufacture and software package are open-sourced for tactile reprodu
 | ✨ **Open-source** | Hardware fabrication and software solution| Refer to [Maintenance schedule](#project-release-schedule) |
 | 💰 **Low-cost** | Less 10 USD for each OptPad | Refer to [BOM details](#device-manufacture) |
 | 🛠 **Reproducible** | Simplified steps with detailed guides | Refer to [Device manufacture](#device-manufacture)  |
-| 📐 **Triaxial** | Three-dimensional *deformation* and forces| Refer to [Project page](https://wangzivector.github.io/OptTacPage/)  |
-| 🕸️ **Distributed**| Locally reconstructed load distribution | Refer to [Project page](https://wangzivector.github.io/OptTacPage/)  |
-| 💪 **Deform, force, torque** | Both positional and wrench modalities | Refer to [Project page](https://wangzivector.github.io/OptTacPage/)  |
+| 📐 **Triaxial** | Three-dimensional *deformation* and forces| Refer to [Project page](https://wangzivector.github.io/opttacproject/)  |
+| 🕸️ **Distributed**| Locally reconstructed load distribution | Refer to [Project page](https://wangzivector.github.io/opttacproject/)  |
+| 💪 **Deform, force, torque** | Both positional and wrench modalities | Refer to [Project page](https://wangzivector.github.io/opttacproject/)  |
 
 </div>
 
