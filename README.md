@@ -1,6 +1,6 @@
 <div align="center">
 
-# OptTac: <ins>low-cost</ins> <ins>triaxial</ins> <ins>distributed</ins> deform-force-torque tactile sensing kit for generalizeable robotic manipulation
+# OptTac: <ins>Low-cost</ins> <ins>triaxial</ins> <ins>distributed</ins> deform-force-torque tactile sensing kit for generalizeable robotic manipulation
 
 [![](https://img.shields.io/badge/Project-Page-green)](https://wangzivector.github.io/opttacproject/)
 [![](https://img.shields.io/badge/Hardware-CAD-purple)](https://github.com/wangzivector/OptTac_Manufacture)
@@ -9,7 +9,7 @@
 [![](https://img.shields.io/badge/License-PolyForm-blue)](./LICENSE)
 
 
-We introduce **OptTac**, optoelectronic tactile sensing kit enabled triaxial deformation-force-torque generalization for contact-rich robotic hardware augmentation.
+We introduce **OptTac**, an optoelectronic taxel matrix design capable of measuring three-dimensional distributed deformation, triaxial forces, and axial torque.
 The device manufacture and software package are open-sourced for tactile reproduction towards relevant embodied manipulation research [**[Porject page]**](https://wangzivector.github.io/opttacproject/). 
 
 <img src="assets/media/system@3x-80.jpg" href="https://wangzivector.github.io/opttacproject/" width="100%" title="opttac_system">
@@ -21,7 +21,7 @@ The device manufacture and software package are open-sourced for tactile reprodu
 | Key characteristics | Functional description | Further reference |
 |---------|-------------|-------------|
 | ✨ **Open-source** | Hardware fabrication and software solution| Refer to [Maintenance schedule](#project-release-schedule) |
-| 💰 **Low-cost** | Less 10 USD for each OptPad | Refer to [BOM details](#device-manufacture) |
+| 💰 **Low-cost** | Less 10 USD for each OptPad | Refer to [BOM details](https://wangzivector.github.io/opttacproject/bom.html) |
 | 🛠 **Reproducible** | Simplified steps with detailed guides | Refer to [Device manufacture](#device-manufacture)  |
 | 📐 **Triaxial** | Three-dimensional *deformation* and forces| Refer to [Project page](https://wangzivector.github.io/opttacproject/)  |
 | 🕸️ **Distributed**| Locally reconstructed load distribution | Refer to [Project page](https://wangzivector.github.io/opttacproject/)  |
@@ -153,7 +153,7 @@ You may use, copy, and modify this code for noncommercial purposes, such as acad
 If you want to cite this work, please find reference below:
 ```
 @article{wang2026opttac,
-  title={OptTac: Reproducible optoelectronic tactile sensing of distributed triaxial deformation, force, and torque for robotic manipulation},
+  title={Programmable optoelectronic taxel matrix enables triaxial distributed deformation, force, and torque sensing in robotic manipulation},
   author={Wang, Xianli and Wu, zehao and Xu, Qingsong},
   journal={Manuscript},
   year={2026}
